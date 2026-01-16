@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(252, 252, 252);
 }
 
 h1 {
@@ -26,7 +27,6 @@ main {
 }
 img {
   max-width: 100%;
-  height: auto;
   display: block;
   margin: 2rem auto;
 }
@@ -43,6 +43,8 @@ header {
   height: 60px;
   justify-content: center;
   text-align: center;
+  z-index: 1000;
+  box-shadow: 0 20px 40px rgba(15, 125, 243, 0.25);
 }
 header nav {
   max-width: 1000px;
@@ -56,8 +58,10 @@ header nav {
 header nav a {
   font-weight: 500;
   color: rgb(45, 43, 47);
+  background-color: rgb(252, 248, 248);
 }
 header nav a:hover {
+  box-shadow: 0 20px 40px rgba(105, 198, 238, 0.941);
   color: aqua;
 }
 main nav a {
@@ -83,13 +87,115 @@ main nav a {
   color: #fff;
 }
 .btn-primary:hover {
-  background-color: yellowgreen;
+  background-color: rgb(69, 165, 233);
 }
 .btn-secondary:hover {
-  background-color: #fff;
+  background-color: rgb(69, 165, 233);
 }
 footer {
-  background-color: rgb(252, 248, 248);
+  background-color: rgb(197, 192, 192);
   width: 100%;
   height: 60px;
+  box-shadow: 0 20px 40px rgba(15, 125, 243, 0.25);
+}
+footer p {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  perspective: 800px;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  transform: translate3d(-30px, 20px, 0) rotateX(8deg) rotateY(-12deg);
+  transition: transform 0.6s ease;
+  box-shadow: 0 20px 40px rgba(15, 125, 243, 0.25);
+}
+
+.hero-image img:hover {
+  transform: translate3d(0, 0, 80px) rotateX(0deg) rotateY(0deg);
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.6);
+}
+
+.pharagrap {
+  box-shadow: 0 20px 40px rgba(15, 125, 243, 0.25);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0deg);
+  transition: transform 0.6s ease;
+}
+.pharagrap:hover {
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.6);
+  transform: translate3d(10px, -20px, 0) rotateX(3deg) rotateY(3deg);
+  transition: transform 0.6s ease;
+}
+.pharagrap h3:hover {
+  color: #0077cc;
+}
+.button {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+.images_on_about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.images_on_about img {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(15, 125, 243, 0.25);
+}
+.Frontend_tool_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Frontend_tool_image img {
+  width: 800px;
+  height: 360px;
+}
+.input_form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.input_form form .box {
+  width: 400px;
+  height: 25px;
+  background: wheat;
+  border: none;
+  border-radius: 75px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(62, 152, 249, 0.004);
+}
+.button_contact_submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_contact_submit button {
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px;
+}
+.button_contact_submit button:hover {
+  box-shadow: 0 20px 40px rgba(2, 64, 130, 0.25);
 }
