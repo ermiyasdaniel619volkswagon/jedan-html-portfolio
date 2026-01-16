@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(237, 227, 227);
 }
 
 h1 {
@@ -167,6 +167,7 @@ footer p {
 .Frontend_tool_image img {
   width: 800px;
   height: 360px;
+  border-radius: 10px;
 }
 .input_form {
   align-items: center;
@@ -198,4 +199,30 @@ footer p {
 }
 .button_contact_submit button:hover {
   box-shadow: 0 20px 40px rgba(2, 64, 130, 0.25);
+}
+
+span {
+  color: rgb(107, 195, 239);
+}
+
+.button_see_more {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: rgb(58, 89, 227);
+  color: #0a0000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button_see_more:hover {
+  background-color: aqua;
+  transform: translateY(-2px);
+}
+
+.button_see_more:active {
+  transform: translateY(0);
 }
